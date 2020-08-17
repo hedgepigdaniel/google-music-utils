@@ -16,7 +16,7 @@ def _replace_invalid_characters(filepath):
 	for char in CHARACTER_REPLACEMENTS:
 		filepath = filepath.replace(char, CHARACTER_REPLACEMENTS[char])
 
-	return filepath
+	return filepath.rstrip(' .')
 
 
 def _split_number_field(field):
